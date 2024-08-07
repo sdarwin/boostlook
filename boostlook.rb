@@ -3,6 +3,7 @@ Asciidoctor::Extensions.register do
     process do |doc, output|
       output = output.sub(/<body (.*?)>/, '<body \\1><div class="doc">')
       output = output.sub(/<\/body>/, "</div></body>")
+      #output = output.sub(/<\/body>/, "</body>")
     end
   end
 end
