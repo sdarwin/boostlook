@@ -2,7 +2,7 @@
   font-family: "Noto Sans";
   font-style: normal;
   font-weight: normal;
-  font-stretch: 87.5%;
+  font-stretch: semi-condensed;
   font-display: block;
   src:
     /*local('Noto Sans Display')*/
@@ -16,7 +16,7 @@
   font-family: "Noto Sans";
   font-style: italic;
   font-weight: normal;
-  font-stretch: 87.5%;
+  font-stretch: semi-condensed;
   font-display: block;
   src:
     /*local('Noto Sans Display Italic')*/
@@ -30,7 +30,7 @@
   font-family: "Noto Sans Mono";
   font-style: normal;
   font-weight: normal;
-  font-stretch: 70%;
+  font-stretch: condensed;
   font-display: block;
   src:
     /*local('Noto sans Mono')*/
@@ -85,7 +85,7 @@ display: block;
 line-height: 1;
 margin-top: 1em;
 margin-bottom: 1em;
-font-weight: 650;
+font-weight: 500;
 }
 
 .doc h1 { font-size: 1.75em; }
@@ -136,59 +136,4 @@ padding: 0.25em 0.55em;
 
 :root {
 --color-pasteboard: rgb(209, 213, 219);
-}
-
-body.article {
-  background-color: var(--color-pasteboard);
-}
-
-body.article .doc {
-  display: grid;
-  grid-template-areas:
-    "header content"
-    ". footer";
-  grid-template-columns: auto 1fr;
-  grid-template-rows: 1fr auto;
-  min-height: 100vh;
-  max-width: 80rem;
-  margin-left: auto;
-  margin-right: auto;
-  gap: 1rem;
-  padding: 1rem;
-}
-
-#toc > ul {
-    margin-left:.125em;
-}
-#toc ul {
-  margin: 0;
-  padding: 0;
-  line-height: 1.2;
-  font-size: 0.85rem;
-  list-style: none;
-}
-
-#toc ul {
-  padding-left: 0.5rem;
-}
-
-.doc > #header,
-.doc > #content,
-.doc > #footer {
-  background-color: white;
-  border-radius: 1rem;
-  padding: 1rem;
-}
-
-#header {
-  grid-area: header;
-  height: fit-content;
-}
-
-#content {
-  grid-area: content;
-}
-
-#footer {
-  grid-area: footer;
 }
